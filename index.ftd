@@ -1,40 +1,58 @@
--- ds.page: Welcome to doc-site
+;;-- ftd.text: Hello SSSM!
+
+-- ftd.column:
+align-content: center
+width: fill-container
+;;height: fill-container
+spacing.fixed.px: 10
+background.solid: light blue
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.text: Vardhaman
+role: $inherited.types.heading-medium   
 
 
--- ds.h3: 🎯 Used by?
+-- card:Vardhaman
 
-Our all documentation sites uses this `doc-site` theme.
+ this is college
+-- card:school
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+its also school
+-- end : ftd.column
 
--- ds.h2: Learn fastn and become a pro?
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- component card:
+caption title: Default Title
+body description: Default description
 
--- end: ds.page
+-- ftd.row:
+width.fixed.px: 750
+height.fixed.px: 360
+background.solid: light pink
+border-width.px: 4
+padding.px: 10
+border-radius.px: 20
+spacing.fixed.px: 30
+
+-- ftd.image:
+src: https://www.careerguide.com/career/wp-content/uploads/2022/12/logoist-2-2.png
+height: fill-container
+width.fixed.px: 290
+border-radius.px:50
+-- ftd.column:
+
+-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+
+-- ftd.text: $card.description
+role: $inherited.types.copy-regular
+
+;;Vardhaman College of Engineering (VCE) was established in the year 1999 by Vardhaman Educational Society, Hyderabad. It is a UGC Autonomous college, approved by AICTE, and is permanently affiliated to Jawaharlal Nehru Technological University (JNTU)
+
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- end: card    
